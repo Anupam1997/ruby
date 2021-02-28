@@ -4,7 +4,7 @@ class Marksheet
         check = false
         while !check do
             @name = gets
-            if @name =~ /^-?[A-Za-z]+$/
+            if @name =~ /^[a-zA-Z]+(?: [a-zA-Z]+)?+(?: [a-zA-Z]+)?$/
                 check = true
             else
                 puts "Enter Name Correctly :"
